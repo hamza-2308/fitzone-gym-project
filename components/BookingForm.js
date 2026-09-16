@@ -51,18 +51,24 @@ export default function BookingForm({ services, packages, trainers, timeSlots, b
   function handleConfirm() {
     setError("");
     startTransition(async () => {
-      const res = await createBooking({
-        ...form,
-        serviceId: selectionType === "service" ? serviceId : null,
-        packageId: selectionType === "package" ? packageId : null,
-        trainerId: trainerId || null,
-        date,
-        time,
-      });
-      if (res.error) {
-        setError(res.error);
-      } else {
-        setResult(res.booking);
+      try {
+        const res = await createBooking({
+          ...form,
+          serviceId: selectionType === "service" ? serviceId : null,
+          packageId: selectionType === "package" ? packageId : null,
+          trainerId: trainerId || null,
+          date,
+          time,
+        });
+        if (res?.error) {
+          setError(res.error);
+        } else if (res?.booking) {
+          setResult(res.booking);
+        } else {
+          setError("Something went wrong. Please try again.");
+        }
+      } catch (err) {
+        setError("Unable to submit your booking right now. Please try again.");
       }
     });
   }
