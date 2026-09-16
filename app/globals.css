@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #14161a;
+  color: #f3f0e9;
+}
+
+::selection {
+  background-color: #ff5a2e;
+  color: #14161a;
+}
+
+.container-px {
+  @apply px-6 md:px-10 lg:px-16;
+}
+
+.section-y {
+  @apply py-20 md:py-28;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 bg-ember text-ink font-semibold px-6 py-3.5 rounded-sm transition-transform duration-150 hover:-translate-y-0.5 active:translate-y-0;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 border border-bone/25 text-bone font-semibold px-6 py-3.5 rounded-sm transition-colors duration-150 hover:border-bone/60;
+}
+
+.card {
+  @apply bg-graphite border border-white/5 rounded-sm;
+}
+
+.label-tag {
+  @apply text-ember text-xs font-semibold tracking-wide;
+}
+
+input, select, textarea {
+  @apply bg-ink border border-white/10 rounded-sm px-4 py-3 text-bone placeholder:text-haze focus:outline-none focus:border-ember/70 transition-colors;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #14161a;
+}
+::-webkit-scrollbar-thumb {
+  background: #33363d;
+  border-radius: 8px;
+}

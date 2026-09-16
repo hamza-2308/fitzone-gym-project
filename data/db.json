@@ -1,0 +1,584 @@
+{
+  "equipmentCategories": [
+    {
+      "id": "cardio",
+      "name": "Cardio Equipment"
+    },
+    {
+      "id": "strength",
+      "name": "Strength Equipment"
+    },
+    {
+      "id": "free-weights",
+      "name": "Free Weights"
+    },
+    {
+      "id": "machines",
+      "name": "Weight Machines"
+    },
+    {
+      "id": "functional",
+      "name": "Functional Training"
+    },
+    {
+      "id": "crossfit",
+      "name": "CrossFit Equipment"
+    },
+    {
+      "id": "boxing",
+      "name": "Boxing Equipment"
+    },
+    {
+      "id": "recovery",
+      "name": "Recovery Equipment"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "eq-1",
+      "name": "Assault AirBike Pro",
+      "category": "cardio",
+      "image": "/images/airbike.jpg",
+      "description": "Air-resistance bike that scales with your effort — the harder you push, the harder it pushes back.",
+      "features": [
+        "Unlimited air resistance",
+        "Dual-action arms",
+        "Digital performance monitor"
+      ],
+      "benefits": [
+        "Full-body cardio",
+        "Builds engine capacity",
+        "Low joint impact"
+      ],
+      "targetType": "Cardiovascular Conditioning",
+      "active": true
+    },
+    {
+      "id": "eq-2",
+      "name": "Curved Manual Treadmill",
+      "category": "cardio",
+      "image": "/images/treadmill.jpg",
+      "description": "Self-powered curved deck that rewards sprint mechanics and natural running form.",
+      "features": [
+        "Non-motorized curved belt",
+        "Real-time speed/power readout"
+      ],
+      "benefits": [
+        "Sprint conditioning",
+        "Improves running form"
+      ],
+      "targetType": "Cardio / Legs",
+      "active": true
+    },
+    {
+      "id": "eq-3",
+      "name": "Olympic Barbell Set",
+      "category": "free-weights",
+      "image": "/images/barbell.jpg",
+      "description": "Competition-grade 20kg barbell with a full range of calibrated plates.",
+      "features": [
+        "20kg Olympic bar",
+        "Knurled grip zones",
+        "Bumper plate compatible"
+      ],
+      "benefits": [
+        "Foundational strength",
+        "Progressive overload"
+      ],
+      "targetType": "Full Body Strength",
+      "active": true
+    },
+    {
+      "id": "eq-4",
+      "name": "Adjustable Dumbbell Rack",
+      "category": "free-weights",
+      "image": "/images/dumbbells.jpg",
+      "description": "5kg to 50kg dumbbells racked in pairs for fast transitions between exercises.",
+      "features": [
+        "5–50kg range",
+        "Rubber-coated heads",
+        "Space-saving rack"
+      ],
+      "benefits": [
+        "Unilateral strength",
+        "Joint stability"
+      ],
+      "targetType": "Upper & Lower Body",
+      "active": true
+    },
+    {
+      "id": "eq-5",
+      "name": "Cable Crossover Station",
+      "category": "machines",
+      "image": "/images/cable-crossover.jpg",
+      "description": "Dual-stack cable tower for constant-tension pressing, pulling and isolation work.",
+      "features": [
+        "Dual weight stacks",
+        "Adjustable pulley height",
+        "Interchangeable handles"
+      ],
+      "benefits": [
+        "Constant tension",
+        "Joint-friendly isolation"
+      ],
+      "targetType": "Chest, Back, Shoulders",
+      "active": true
+    },
+    {
+      "id": "eq-6",
+      "name": "Leg Press Machine",
+      "category": "machines",
+      "image": "/images/leg-press.jpg",
+      "description": "45-degree sled built for heavy, controlled lower-body loading.",
+      "features": [
+        "45° plate-loaded sled",
+        "Safety catch bars"
+      ],
+      "benefits": [
+        "Quad & glute strength",
+        "Lower back friendly"
+      ],
+      "targetType": "Legs & Glutes",
+      "active": true
+    },
+    {
+      "id": "eq-7",
+      "name": "Battle Ropes",
+      "category": "functional",
+      "image": "/images/battle-ropes.jpg",
+      "description": "15m heavy-gauge ropes for explosive, high-output conditioning intervals.",
+      "features": [
+        "15m length",
+        "Anchor point included"
+      ],
+      "benefits": [
+        "Explosive power",
+        "Grip & core endurance"
+      ],
+      "targetType": "Full Body Conditioning",
+      "active": true
+    },
+    {
+      "id": "eq-8",
+      "name": "Kettlebell Set",
+      "category": "crossfit",
+      "image": "/images/kettlebell.jpg",
+      "description": "8kg to 32kg cast-iron kettlebells for ballistic and grind-style training.",
+      "features": [
+        "8–32kg range",
+        "Wide flat base",
+        "Textured handle"
+      ],
+      "benefits": [
+        "Power & mobility",
+        "Metabolic conditioning"
+      ],
+      "targetType": "Full Body",
+      "active": true
+    },
+    {
+      "id": "eq-9",
+      "name": "Heavy Bag & Speed Bag",
+      "category": "boxing",
+      "image": "/images/heavy-bag.jpg",
+      "description": "150lb heavy bag paired with a platform speed bag for combo and timing work.",
+      "features": [
+        "150lb heavy bag",
+        "Adjustable speed platform"
+      ],
+      "benefits": [
+        "Cardio & power",
+        "Hand-eye coordination"
+      ],
+      "targetType": "Boxing Conditioning",
+      "active": true
+    },
+    {
+      "id": "eq-10",
+      "name": "Percussion Recovery Gun",
+      "category": "recovery",
+      "image": "/images/recovery-gun.jpg",
+      "description": "Deep-tissue percussion device to speed up recovery between sessions.",
+      "features": [
+        "6 speed settings",
+        "4 interchangeable heads"
+      ],
+      "benefits": [
+        "Faster recovery",
+        "Reduced soreness"
+      ],
+      "targetType": "Recovery & Mobility",
+      "active": true
+    }
+  ],
+  "services": [
+    {
+      "id": "srv-1",
+      "name": "Personal Training",
+      "image": "/images/barbell.jpg",
+      "description": "One-on-one coaching built entirely around your goals, schedule and starting point.",
+      "benefits": [
+        "Custom programming",
+        "Form correction",
+        "Accountability"
+      ],
+      "duration": "60 min",
+      "price": 3500,
+      "active": true
+    },
+    {
+      "id": "srv-2",
+      "name": "Weight Loss Coaching",
+      "image": "/images/treadmill.jpg",
+      "description": "A structured mix of training and habit coaching to drive sustainable fat loss.",
+      "benefits": [
+        "Weekly check-ins",
+        "Nutrition guidance",
+        "Progress tracking"
+      ],
+      "duration": "45 min",
+      "price": 3000,
+      "active": true
+    },
+    {
+      "id": "srv-3",
+      "name": "Muscle Building",
+      "image": "/images/cable-crossover.jpg",
+      "description": "Progressive hypertrophy programming for serious, measurable size and strength gains.",
+      "benefits": [
+        "Split routines",
+        "Load progression tracking"
+      ],
+      "duration": "60 min",
+      "price": 3500,
+      "active": true
+    },
+    {
+      "id": "srv-4",
+      "name": "Cardio Training",
+      "image": "/images/airbike.jpg",
+      "description": "Interval and endurance sessions designed to build a bigger engine, fast.",
+      "benefits": [
+        "Improved stamina",
+        "Heart health"
+      ],
+      "duration": "45 min",
+      "price": 2500,
+      "active": true
+    },
+    {
+      "id": "srv-5",
+      "name": "Strength Training",
+      "image": "/images/barbell.jpg",
+      "description": "Compound-lift focused sessions to build raw, functional strength.",
+      "benefits": [
+        "Bigger lifts",
+        "Joint stability"
+      ],
+      "duration": "60 min",
+      "price": 3200,
+      "active": true
+    },
+    {
+      "id": "srv-6",
+      "name": "HIIT",
+      "image": "/images/battle-ropes.jpg",
+      "description": "High-intensity interval circuits that torch calories in under 45 minutes.",
+      "benefits": [
+        "Time efficient",
+        "Afterburn effect"
+      ],
+      "duration": "40 min",
+      "price": 2800,
+      "active": true
+    },
+    {
+      "id": "srv-7",
+      "name": "Yoga",
+      "image": "/images/yoga.jpg",
+      "description": "Breath-led flows to build flexibility, balance and recovery between hard sessions.",
+      "benefits": [
+        "Flexibility",
+        "Stress relief"
+      ],
+      "duration": "50 min",
+      "price": 2200,
+      "active": true
+    },
+    {
+      "id": "srv-8",
+      "name": "Boxing",
+      "image": "/images/heavy-bag.jpg",
+      "description": "Pad work, bag rounds and footwork drills with a certified boxing coach.",
+      "benefits": [
+        "Full body conditioning",
+        "Coordination & reflexes"
+      ],
+      "duration": "50 min",
+      "price": 3000,
+      "active": true
+    },
+    {
+      "id": "srv-9",
+      "name": "Functional Training",
+      "image": "/images/kettlebell.jpg",
+      "description": "Movement-pattern training that carries over directly into everyday life and sport.",
+      "benefits": [
+        "Mobility",
+        "Injury prevention"
+      ],
+      "duration": "45 min",
+      "price": 2800,
+      "active": true
+    }
+  ],
+  "packages": [
+    {
+      "id": "pkg-basic",
+      "name": "Basic",
+      "price": 4000,
+      "duration": "Monthly",
+      "benefits": [
+        "Gym Access",
+        "Cardio Area",
+        "Weight Area"
+      ],
+      "active": true
+    },
+    {
+      "id": "pkg-premium",
+      "name": "Premium",
+      "price": 8000,
+      "duration": "Monthly",
+      "benefits": [
+        "Full Gym Access",
+        "Personal Training (4 sessions)",
+        "Fitness Assessment",
+        "Group Classes"
+      ],
+      "active": true
+    },
+    {
+      "id": "pkg-vip",
+      "name": "VIP",
+      "price": 15000,
+      "duration": "Monthly",
+      "benefits": [
+        "Unlimited Access",
+        "Dedicated Personal Trainer",
+        "Nutrition Guidance",
+        "Personalized Workout Plan",
+        "Priority Booking"
+      ],
+      "active": true
+    }
+  ],
+  "trainers": [
+    {
+      "id": "tr-1",
+      "name": "Hamza Khan",
+      "image": "/images/trainer-1.jpg",
+      "specialization": "Strength & Powerlifting",
+      "experience": "8 years",
+      "certifications": [
+        "NASM-CPT",
+        "USAPL Coach"
+      ],
+      "availability": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "active": true
+    },
+    {
+      "id": "tr-2",
+      "name": "Ayesha Malik",
+      "image": "/images/trainer-2.jpg",
+      "specialization": "Weight Loss & HIIT",
+      "experience": "6 years",
+      "certifications": [
+        "ACE-CPT",
+        "Nutrition Coach"
+      ],
+      "availability": [
+        "Tue",
+        "Thu",
+        "Sat"
+      ],
+      "active": true
+    },
+    {
+      "id": "tr-3",
+      "name": "Bilal Ahmed",
+      "image": "/images/trainer-3.jpg",
+      "specialization": "Boxing & Conditioning",
+      "experience": "10 years",
+      "certifications": [
+        "Boxing Coach L2",
+        "First Aid"
+      ],
+      "availability": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Sat"
+      ],
+      "active": true
+    },
+    {
+      "id": "tr-4",
+      "name": "Sana Tariq",
+      "image": "/images/trainer-4.jpg",
+      "specialization": "Yoga & Mobility",
+      "experience": "5 years",
+      "certifications": [
+        "RYT-200",
+        "Mobility Specialist"
+      ],
+      "availability": [
+        "Mon",
+        "Wed",
+        "Fri",
+        "Sun"
+      ],
+      "active": true
+    }
+  ],
+  "programs": [
+    {
+      "id": "pr-1",
+      "name": "12-Week Transformation",
+      "description": "A structured strength + fat-loss block with weekly check-ins."
+    },
+    {
+      "id": "pr-2",
+      "name": "Strength Foundations",
+      "description": "8 weeks of compound-lift progression for beginners to intermediates."
+    },
+    {
+      "id": "pr-3",
+      "name": "Fight Camp",
+      "description": "6 weeks of boxing conditioning building toward a final sparring session."
+    }
+  ],
+  "gallery": [
+    {
+      "id": "g-1",
+      "category": "Gym",
+      "image": "/images/cable-crossover.jpg"
+    },
+    {
+      "id": "g-2",
+      "category": "Equipment",
+      "image": "/images/treadmill.jpg"
+    },
+    {
+      "id": "g-3",
+      "category": "Training Area",
+      "image": "/images/barbell.jpg"
+    },
+    {
+      "id": "g-4",
+      "category": "Facilities",
+      "image": "/images/airbike.jpg"
+    },
+    {
+      "id": "g-5",
+      "category": "Gym",
+      "image": "/images/leg-press.jpg"
+    },
+    {
+      "id": "g-6",
+      "category": "Equipment",
+      "image": "/images/kettlebell.jpg"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "t-1",
+      "name": "Usman Raza",
+      "rating": 5,
+      "feedback": "Dropped 14kg in 4 months. The trainers actually track your progress instead of guessing."
+    },
+    {
+      "id": "t-2",
+      "name": "Fatima Noor",
+      "rating": 5,
+      "feedback": "Best equipment variety I've seen in the city. Booking sessions online is genuinely convenient."
+    },
+    {
+      "id": "t-3",
+      "name": "Hassan Ali",
+      "rating": 4,
+      "feedback": "Boxing sessions with Bilal completely changed my conditioning. Highly recommend Fight Camp."
+    }
+  ],
+  "transformations": [
+    {
+      "id": "tf-1",
+      "name": "Usman Raza",
+      "story": "Lost 14kg and gained visible strength across a 12-week program.",
+      "before": "/images/treadmill.jpg",
+      "after": "/images/barbell.jpg"
+    },
+    {
+      "id": "tf-2",
+      "name": "Fatima Noor",
+      "story": "Built consistent strength habits and improved posture over 16 weeks.",
+      "before": "/images/trainer-2.jpg",
+      "after": "/images/trainer-4.jpg"
+    }
+  ],
+  "timeSlots": [
+    "09:00 AM",
+    "10:00 AM",
+    "11:00 AM",
+    "12:00 PM",
+    "02:00 PM",
+    "03:00 PM",
+    "04:00 PM",
+    "05:00 PM",
+    "06:00 PM",
+    "07:00 PM"
+  ],
+  "bookings": [
+    {
+      "id": "BK-100001",
+      "fullName": "Ali Raza",
+      "phone": "0300-1234567",
+      "email": "ali@example.com",
+      "whatsapp": "0300-1234567",
+      "serviceId": "srv-1",
+      "packageId": null,
+      "trainerId": "tr-1",
+      "date": "2026-09-15",
+      "time": "10:00 AM",
+      "fitnessGoal": "Build strength",
+      "notes": "",
+      "status": "Confirmed",
+      "createdAt": "2026-09-08T10:00:00.000Z"
+    },
+    {
+      "id": "BK-100002",
+      "fullName": "Muhammad Amir hamza",
+      "phone": "03465932417",
+      "email": "m.amirhamza2308@gmail.com",
+      "whatsapp": "03465932417",
+      "serviceId": "srv-1",
+      "packageId": null,
+      "trainerId": "tr-1",
+      "date": "2026-09-17",
+      "time": "06:00 PM",
+      "fitnessGoal": "build strength",
+      "notes": "",
+      "status": "Confirmed",
+      "createdAt": "2026-09-16T11:23:05.569Z"
+    }
+  ],
+  "inquiries": [],
+  "admin": {
+    "username": "admin",
+    "password": "admin123"
+  }
+}
