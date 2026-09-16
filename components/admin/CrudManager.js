@@ -110,12 +110,12 @@ export default function CrudManager({ collection, prefix, title, singular, field
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
         <div>
-          <h1 className="font-display text-3xl text-bone">{title}</h1>
+          <h1 className="font-display text-2xl sm:text-3xl text-bone">{title}</h1>
           <p className="text-haze text-sm mt-1">{items.length} total</p>
         </div>
-        <button onClick={openNew} className="btn-primary text-sm py-2.5 px-5">
+        <button onClick={openNew} className="btn-primary text-sm py-2.5 px-5 w-full sm:w-auto justify-center">
           + Add {singular}
         </button>
       </div>
@@ -167,11 +167,11 @@ export default function CrudManager({ collection, prefix, title, singular, field
       </div>
 
       {editing && (
-        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4" onClick={close}>
+        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-2 sm:p-4" onClick={close}>
           <form
             onClick={(e) => e.stopPropagation()}
             onSubmit={handleSave}
-            className="card p-8 w-full max-w-lg max-h-[85vh] overflow-y-auto"
+            className="card p-5 sm:p-8 w-full max-w-lg max-h-[85vh] overflow-y-auto"
           >
             <h2 className="font-display text-xl text-bone mb-5">
               {editing.id ? "Edit" : "Add"} {singular}

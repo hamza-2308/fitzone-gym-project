@@ -17,10 +17,10 @@ export default function AdminSettingsPage() {
 
   return (
     <div>
-      <h1 className="font-display text-3xl text-bone mb-1">Settings</h1>
+      <h1 className="font-display text-2xl sm:text-3xl text-bone mb-1">Settings</h1>
       <p className="text-haze text-sm mb-8">Manage your admin account.</p>
 
-      <div className="card p-8 max-w-md">
+      <div className="card p-5 sm:p-8 max-w-md w-full">
         <h2 className="text-bone font-semibold mb-5">Change Password</h2>
         <form action={formAction} className="space-y-4">
           <div>

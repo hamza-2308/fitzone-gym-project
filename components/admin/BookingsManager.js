@@ -54,20 +54,18 @@ export default function BookingsManager({ bookings, services, packages, trainers
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
-        <div>
-          <h1 className="font-display text-3xl text-bone">Bookings</h1>
-          <p className="text-haze text-sm mt-1">{bookings.length} total</p>
-        </div>
+      <div className="mb-6">
+        <h1 className="font-display text-2xl sm:text-3xl text-bone">Bookings</h1>
+        <p className="text-haze text-sm mt-1">{bookings.length} total</p>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-3 mb-6">
-        <div className="flex gap-2 flex-wrap">
+      <div className="flex flex-col md:flex-row gap-3 mb-6">
+        <div className="flex gap-2 flex-wrap overflow-x-auto pb-1">
           {["All", ...STATUSES].map((s) => (
             <button
               key={s}
               onClick={() => setStatusFilter(s)}
-              className={`text-xs px-3.5 py-2 rounded-sm border ${
+              className={`text-xs px-3.5 py-2 rounded-sm border whitespace-nowrap ${
                 statusFilter === s ? "bg-ember text-ink border-ember font-semibold" : "border-white/10 text-haze"
               }`}
             >
@@ -79,7 +77,7 @@ export default function BookingsManager({ bookings, services, packages, trainers
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search name, phone, or booking ID..."
-          className="w-full sm:w-72 sm:ml-auto"
+          className="w-full md:w-72 md:ml-auto"
         />
       </div>
 
@@ -126,8 +124,8 @@ export default function BookingsManager({ bookings, services, packages, trainers
       </div>
 
       {viewing && (
-        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4" onClick={() => setViewing(null)}>
-          <div onClick={(e) => e.stopPropagation()} className="card p-8 w-full max-w-md">
+        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-2 sm:p-4" onClick={() => setViewing(null)}>
+          <div onClick={(e) => e.stopPropagation()} className="card p-5 sm:p-8 w-full max-w-md max-h-[85vh] overflow-y-auto">
             <h2 className="font-display text-xl text-bone mb-5">Booking {viewing.id}</h2>
             <div className="space-y-2.5 text-sm">
               <Row label="Customer" value={viewing.fullName} />

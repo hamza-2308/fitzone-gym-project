@@ -12,7 +12,7 @@ export default function AdminDashboardLayout({ children }) {
   return (
     <div className="flex min-h-screen bg-ink">
       <AdminSidebar />
-      <main className="flex-1 p-8 md:p-10 max-w-[1400px]">{children}</main>
+      <main className="flex-1 pt-16 lg:pt-8 px-4 sm:px-6 md:px-8 lg:p-10 max-w-[1400px]">{children}</main>
     </div>
   );
 }

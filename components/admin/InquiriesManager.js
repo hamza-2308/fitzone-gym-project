@@ -30,11 +30,9 @@ export default function InquiriesManager({ inquiries }) {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
-        <div>
-          <h1 className="font-display text-3xl text-bone">Inquiries</h1>
-          <p className="text-haze text-sm mt-1">{inquiries.length} total</p>
-        </div>
+      <div className="mb-6">
+        <h1 className="font-display text-2xl sm:text-3xl text-bone">Inquiries</h1>
+        <p className="text-haze text-sm mt-1">{inquiries.length} total</p>
       </div>
 
       <div className="card overflow-x-auto">
@@ -78,8 +76,8 @@ export default function InquiriesManager({ inquiries }) {
       </div>
 
       {viewing && (
-        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4" onClick={() => setViewing(null)}>
-          <div onClick={(e) => e.stopPropagation()} className="card p-8 w-full max-w-md">
+        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-2 sm:p-4" onClick={() => setViewing(null)}>
+          <div onClick={(e) => e.stopPropagation()} className="card p-5 sm:p-8 w-full max-w-md max-h-[85vh] overflow-y-auto">
             <h2 className="font-display text-xl text-bone mb-5">Message from {viewing.name}</h2>
             <div className="space-y-2.5 text-sm">
               <Row label="Email" value={viewing.email} />

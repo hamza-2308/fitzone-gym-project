@@ -27,58 +27,59 @@ export default function AdminDashboardPage() {
 
   return (
     <div>
-      <h1 className="font-display text-3xl text-bone mb-1">Dashboard</h1>
+      <h1 className="font-display text-2xl sm:text-3xl text-bone mb-1">Dashboard</h1>
       <p className="text-haze text-sm mb-8">Overview of FitZone bookings and content.</p>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-10">
         {stats.map((s) => (
-          <div key={s.label} className="card p-6">
-            <div className="font-display text-3xl text-bone">{s.value}</div>
+          <div key={s.label} className="card p-4 sm:p-6">
+            <div className="font-display text-2xl sm:text-3xl text-bone">{s.value}</div>
             <div className="text-haze text-xs mt-1.5">{s.label}</div>
           </div>
         ))}
       </div>
 
       <div className="card p-0 overflow-hidden">
-        <div className="flex items-center justify-between px-6 py-5 border-b border-white/5">
+        <div className="flex items-center justify-between px-4 sm:px-6 py-5 border-b border-white/5">
           <h2 className="text-bone font-semibold">Recent Bookings</h2>
           <Link href="/admin/bookings" className="text-ember text-sm font-semibold">
             View all →
           </Link>
         </div>
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="text-left text-haze border-b border-white/5">
-              <th className="px-6 py-3 font-medium">ID</th>
-              <th className="px-6 py-3 font-medium">Customer</th>
-              <th className="px-6 py-3 font-medium">Service</th>
-              <th className="px-6 py-3 font-medium">Date / Time</th>
-              <th className="px-6 py-3 font-medium">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            {recent.map((b) => (
-              <tr key={b.id} className="border-b border-white/5 last:border-0">
-                <td className="px-6 py-3.5 text-bone/90">{b.id}</td>
-                <td className="px-6 py-3.5 text-bone/90">{b.fullName}</td>
-                <td className="px-6 py-3.5 text-bone/90">{nameFor(b)}</td>
-                <td className="px-6 py-3.5 text-bone/90">{b.date} · {b.time}</td>
-                <td className="px-6 py-3.5">
-                  <StatusBadge status={b.status} />
-                </td>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm min-w-[600px]">
+            <thead>
+              <tr className="text-left text-haze border-b border-white/5">
+                <th className="px-4 sm:px-6 py-3 font-medium">ID</th>
+                <th className="px-4 sm:px-6 py-3 font-medium">Customer</th>
+                <th className="px-4 sm:px-6 py-3 font-medium">Service</th>
+                <th className="px-4 sm:px-6 py-3 font-medium">Date / Time</th>
+                <th className="px-4 sm:px-6 py-3 font-medium">Status</th>
               </tr>
-            ))}
-            {recent.length === 0 && (
-              <tr>
-                <td colSpan={5} className="px-6 py-10 text-center text-haze">
-                  No bookings yet.
-                </td>
-              </tr>
-            )}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {recent.map((b) => (
+                <tr key={b.id} className="border-b border-white/5 last:border-0">
+                  <td className="px-4 sm:px-6 py-3.5 text-bone/90">{b.id}</td>
+                  <td className="px-4 sm:px-6 py-3.5 text-bone/90">{b.fullName}</td>
+                  <td className="px-4 sm:px-6 py-3.5 text-bone/90">{nameFor(b)}</td>
+                  <td className="px-4 sm:px-6 py-3.5 text-bone/90 whitespace-nowrap">{b.date} · {b.time}</td>
+                  <td className="px-4 sm:px-6 py-3.5">
+                    <StatusBadge status={b.status} />
+                  </td>
+                </tr>
+              ))}
+              {recent.length === 0 && (
+                <tr>
+                  <td colSpan={5} className="px-6 py-10 text-center text-haze">
+                    No bookings yet.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
 }
-
