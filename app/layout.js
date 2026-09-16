@@ -1,7 +1,5 @@
 import "./globals.css";
 import { Anton, Inter } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const anton = Anton({
   subsets: ["latin"],
@@ -25,11 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${anton.variable} ${inter.variable}`}>
-      <body className="font-body antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <body className="font-body antialiased">{children}</body>
     </html>
   );
 }
